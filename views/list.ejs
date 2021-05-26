@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-9">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.0">
+    <title>To Do LIst</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+    <div class="box" id="heading">
+        <h1><%= dayOfKind%></h3>
+    </div>
+
+    <div class="box">
+     <% for(var i = 0; i < list_items.length; i++) { %>
+        <div class="item">
+            <input type="checkbox">
+            <p><%= list_items[i] %></p>
+        </div>
+      <%} %>
+    <form class="" action="/" method="post">
+        <input type="text" name="inp" placeholder="New Item" autocomplete="off">
+        <button type="submit">+</button>
+    </form>
+
+    </div>
+
+
+    
+</body>
+</html>
